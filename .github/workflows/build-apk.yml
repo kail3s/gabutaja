@@ -19,9 +19,11 @@ jobs:
         with:
           distribution: temurin
           java-version: '17'
-
+          
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
+        with:
+          accept-android-sdk-licenses: true
 
       - name: Extract project
         run: |
